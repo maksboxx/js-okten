@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>additional 1</title>
+</head>
+<body>
+<script>
+
+    // --створити масив з:
+    // - з 5 числових значень
+    // - з 5 стічкових значень
+    // - з 5 значень стрічкового, числового та булевого типу
+    // - та вивести його в консоль
+
+    /*    let array=[1,2,3,4,5];
+    let strArray=['Hello1','Hello2','Hello3','Hello4','Hello5'];
+    let anyArray=[1,2,'AnyText1','AnyText2','AnyText3',true,false];
+
+    console.log(array);
+    console.log(strArray);
+    console.log(anyArray);*/
+
+    // -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+
+    /*    let empty=[];
+    for (let i = 0; i < 10; i++) {
+        empty[empty.length]=`Text № ${i+1}`;
+        console.log(empty[i]);
+    }
+    console.log(empty)*/
+
+    // - є масив [2,17,13,6,22,31,45,66,100,-18] :
+    // 1. перебрати його циклом while
+
+    /*   let array=[2,17,13,6,22,31,45,66,100,-18];
+    let whilei =0;
+
+    while(whilei<array.length){
+        console.log(array[whilei]);
+        whilei++;
+    }*/
+
+    //     2. перебрати його циклом for
+
+    /*  let array=[2,17,13,6,22,31,45,66,100,-18];
+    for (const number of array) {
+        console.log(number)
+    }*/
+
+    // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18];
+        let i=0;
+        while(i<array.length){
+            let x = array[i]%2;
+            if(x){
+                console.log(array[i])
+            }
+            i++
+        }*/
+
+    // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18];
+    for (const number of array) {
+        if(number%2){
+            console.log(number)
+        }
+    }*/
+
+    // 5. перебрати циклом while та вивести  числа тільки парні  значення
+
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18];
+        let i=0;
+        while (i<array.length){
+            if(array[i]%2){
+
+            }else{
+                console.log(array[i])
+            }
+            i++
+        }*/
+
+    // 6. перебрати циклом for та вивести  числа тільки парні  значення
+
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18]
+        let onlyPar=[]; // Массив для парных элементов
+        for (const number of array) {
+            if(number%2){
+
+            }else{
+                onlyPar[onlyPar.length]=number;
+                console.log(number)
+            }
+        }
+        console.log(onlyPar)*/
+
+    // 7. замінити кожне число кратне 3 на слово "okten"
+
+    /*
+    let array=[2,17,13,6,22,31,45,66,100,-18]
+
+    for (let i = 0; i < array.length; i++) {
+        const arrayElement = array[i];
+        if(arrayElement%3){
+        }
+        else{
+            array[i]='okten';
+        }
+    }
+    console.log(array)
+*/
+
+    // 8. вивести масив в зворотньому порядку.
+
+    /*   let array=[2,17,13,6,22,31,45,66,100,-18]
+    for (let i = array.length-1; i>=0 ; i--) {
+        console.log(array[i])
+    }*/
+
+    // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+    //7
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18]
+
+    for (let i = array.length-1; i>=0 ; i--) {
+        const arrayElement = array[i];
+        if(arrayElement%3){
+        }
+        else{
+            array[i]='okten';
+        }
+        console.log(array[i])
+    }*/
+    //6
+    /*  let array=[2,17,13,6,22,31,45,66,100,-18]
+    let onlyPar=[]; // Массив для парных элементов
+    for (const number of array) {
+        if(number%2){
+
+        }else{
+            onlyPar[onlyPar.length]=number;
+        }
+    }
+    console.log(onlyPar)
+    for (let i = onlyPar.length-1; i>=0 ; i--) {
+        console.log(onlyPar[i])
+    }*/
+    //5
+    /*let array=[2,17,13,6,22,31,45,66,100,-18];
+    let i=array.length;
+    while (i>=0){
+        if(array[i]%2){
+
+        }else{
+            console.log(array[i])
+        }
+        i--
+    }*/
+    //4
+    /* let array=[2,17,13,6,22,31,45,66,100,-18];
+    for (let i = array.length-1; i>=0 ; i--) {
+        if(array[i]%2){
+            console.log(array[i])
+        }
+    }*/
+    //3
+    /*    let array=[2,17,13,6,22,31,45,66,100,-18];
+        let i=array.length;
+        while(i>=0){
+            let x = array[i]%2;
+            if(x){
+                console.log(array[i])
+            }
+            i--
+        }*/
+    //2
+    /*  let array=[2,17,13,6,22,31,45,66,100,-18];
+    let i =array.length;
+    while(i>=0){
+        console.log(array[i]);
+        i--;
+    }*/
+
+    // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+    // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+    // Одно и то же, только разные значения массива
+
+    /*let array=[2,17,13,6,22,31,45,66,100,-18];
+    for (const number of array) {
+        console.log(number)
+    }*/
+
+    // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+  /*  let array=[2,'Hello',13,'Okten',22,31,true,66,100,false];
+    for (const number of array) {
+        console.log(number)
+    }*/
+
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+    // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+
+/*    let array=[2,'Hello',13,'Okten',22,31,true,66,100,false];
+    let num=[];
+    let str=[];
+    let bool=[];
+    for (let i = 0; i < array.length; i++) {
+        const arrayElement = array[i];
+        if(typeof arrayElement === 'number'){
+            num[num.length]=arrayElement;
+        }else if(typeof arrayElement === 'string'){
+            str[str.length]=arrayElement;
+        }
+        else{
+            bool[bool.length]=arrayElement;
+        }
+    }
+    console.log(num)
+    console.log(str)
+    console.log(bool)*/
+
+    // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+   /* let array=[];
+    array[0]='Hello';
+    array[1]='Okten';
+    array[2]=123;
+    array[3]=5124;
+    array[4]='Ukraine';
+    array[5]=true;
+    array[6]='Poland';
+    array[7]=false;
+    array[8]=true;
+    array[9]=145512;
+    for (const arrayElement of array) {
+        console.log(arrayElement)
+    }*/
+    // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    /*for (let i = 0; i < 10; i++) {
+        console.log(i+1)
+        document.write(`${i+1} `)
+    }*/
+    // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+   /* for (let i = 0; i < 100; i++) {
+        console.log(i+1)
+        document.write(`${i+1} `)
+    }*/
+    // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+   /* for (let i = 0; i < 100; i+=2) {
+        console.log(i)
+        document.write(`${i} `)
+    }*/
+    // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+    // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+/*    let even=[];
+    let odd=[];
+    for (let i = 0; i < 100; i++) {
+       if(i%2){
+        even[even.length]=i;
+       }else{
+           odd[odd.length]=i;
+       }
+    }
+    for (const oddElement of odd) {
+        console.log(oddElement)
+    }
+    for (const evenElement of even) {
+        console.log(evenElement)
+
+    // Сделал через массивы )
+    }*/
+
+    // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+    const books = [
+        {
+            title: "The Great Gatsby",
+            pages: 180,
+            authors: ["F. Scott Fitzgerald"],
+            genres: ["Classic", "Fiction"]
+        },
+        {
+            title: "To Kill a Mockingbird",
+            pages: 281,
+            authors: ["Harper Lee"],
+            genres: ["Fiction", "Classic", "Drama"]
+        },
+        {
+            title: "1984",
+            pages: 328,
+            authors: ["George Orwell"],
+            genres: ["Dystopian", "Science Fiction"]
+        },
+        {
+            title: "The Catcher in the Rye",
+            pages: 214,
+            authors: ["J.D. Salinger"],
+            genres: ["Classic", "Fiction", "Young Adult"]
+        },
+        {
+            title: "Pride and Prejudice",
+            pages: 279,
+            authors: ["Jane Austen"],
+            genres: ["Classic", "Romance", "Fiction"]
+        },
+        {
+            title: "The Hobbit",
+            pages: 310,
+            authors: ["J.R.R. Tolkien"],
+            genres: ["Fantasy", "Adventure"]
+        },
+        {
+            title: "The Stand",
+            pages: 1152,
+            authors: ["Stephen King"],
+            genres: ["Horror", "Post-Apocalyptic", "Fantasy"]
+        },
+        {
+            title: "War and Peace",
+            pages: 1225,
+            authors: ["Leo Tolstoy"],
+            genres: ["Historical Fiction", "Classic", "War"]
+        },
+        {
+            title: "Crime and Punishment",
+            pages: 671,
+            authors: ["Fyodor Dostoevsky"],
+            genres: ["Classic", "Philosophical", "Psychological Fiction"]
+        },
+        {
+            title: "The Lord of the Rings",
+            pages: 1216,
+            authors: ["J.R.R. Tolkien"],
+            genres: ["Fantasy", "Adventure", "Epic",]
+        }
+    ];
+
+    // - знайти книжку/ки з найбільшою кількістю жанрів
+/*
+    let maxGenre=0;
+    let bookWithMaxGenre=[];
+    for (let i = 0; i < books.length; i++) {
+        const bookGenre = books[i].genres.length;
+        if(bookGenre>maxGenre){
+            maxGenre=bookGenre;
+        }
+    }
+    for (const bookWithMaxGenreElement of books) {
+        if (bookWithMaxGenreElement.genres.length === maxGenre){
+            bookWithMaxGenre[bookWithMaxGenre.length]= bookWithMaxGenreElement.title;
+            document.write(`<div>Book with max genres (${maxGenre})- ${bookWithMaxGenreElement.title} </div>`)
+            console.log(bookWithMaxGenreElement.title)
+        }
+
+    }
+    console.log(bookWithMaxGenre)
+    */
+
+    //!!!!!!!!!!!!!    Чуть капиляры на голове не лопнули пока поканял как это сделать,хотя уверен что можно оптимизировать. Но работает и так )!!!!!!!!!
+
+
+    // - знайти книжку/ки з найдовшою назвою
+  /*  let maxlenght=0;
+    let titleWithMaxLenght='';
+    for (let i = 0; i < books.length; i++) {
+        const booklenght = books[i].title.length;
+        if(booklenght>maxlenght){
+            maxlenght=booklenght;
+            titleWithMaxLenght=books[i].title
+        }
+    }
+    console.log(titleWithMaxLenght)
+    console.log(maxlenght)
+
+*/
+
+    // -знайти наібльшу книжку.
+
+  /*  let maxPages=0;
+    let titleWithMaxPages='';
+    for (let i = 0; i < books.length; i++) {
+        const bookPages = books[i].pages;
+        if(bookPages >maxPages){
+            maxPages=bookPages;
+            titleWithMaxPages=books[i].title
+        }
+    }
+    console.log(titleWithMaxPages)
+    console.log(maxPages)
+*/
+    // - знайти книжку/ки які писали 2 автори
+    // - знайти книжку/ки які писав 1 автор
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
