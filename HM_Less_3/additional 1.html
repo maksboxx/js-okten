@@ -281,7 +281,7 @@
         {
             title: "To Kill a Mockingbird",
             pages: 281,
-            authors: ["Harper Lee"],
+            authors: ["Harper Lee","F. Scott Fitzgerald"],
             genres: ["Fiction", "Classic", "Drama"]
         },
         {
@@ -323,7 +323,7 @@
         {
             title: "Crime and Punishment",
             pages: 671,
-            authors: ["Fyodor Dostoevsky"],
+            authors: ["Fyodor Dostoevsky","Jane Austen"],
             genres: ["Classic", "Philosophical", "Psychological Fiction"]
         },
         {
@@ -388,7 +388,28 @@
     console.log(maxPages)
 */
     // - знайти книжку/ки які писали 2 автори
+   /* let authorBook =[]; // Массив в котором книги у которых 2 автора;
+    for (let i = 0; i < books.length; i++) {
+        // console.log(books[i].authors.length)
+        if(books[i].authors.length === 2){
+            authorBook[authorBook.length]=books[i].title;
+            console.log(books[i].title, books[i].authors);
+
+        }
+    }
+    console.log(authorBook)*/
+
     // - знайти книжку/ки які писав 1 автор
+
+    let authorBook =[];
+    for (let i = 0; i < books.length; i++) {
+        if(books[i].authors.length === 1){
+            authorBook[authorBook.length]=books[i].title;
+            console.log(books[i].title, books[i].authors);
+
+        }
+    }
+    console.log(authorBook)
 
 
 
