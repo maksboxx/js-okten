@@ -1,7 +1,3 @@
-
-// - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
-// Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
-
 let pi =3.14;
 
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
