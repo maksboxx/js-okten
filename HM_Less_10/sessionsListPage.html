@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .list{
+      border: 1px solid black;
+      padding-left: 10px;
+      margin: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<script>
+  function sessionDate(){
+    let sessionsList = JSON.parse(localStorage.getItem('sessionsList'))
+    for (const session of sessionsList) {
+      let div = document.createElement('div')
+      let p = document.createElement('p')
+      div.classList.add('list')
+      p.innerText=`Дата: ${session.date}, Время: ${session.time}`
+      div.append(p)
+      document.body.appendChild(div)
+    }
+  }
+  sessionDate();
+</script>
+</body>
+</html>

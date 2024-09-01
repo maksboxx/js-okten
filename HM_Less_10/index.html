@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HM 10</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #text{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .userInfo{
+            width: 500px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .counterReload{
+            background-color: lightgray;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        td{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        #counter2{
+            margin: 10px;
+            padding-top: 40px;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="text">
+    <h1>TAP ME</h1>
+</div>
+<form name="form">
+    <input type="text" name="age">
+    <button>Submit</button>
+</form>
+<form name="user">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="surname" placeholder="Surname">
+    <input type="text" name="age" placeholder="Age">
+    <button>Submit</button>
+</form>
+<div class="counterReload">
+ <p id="counter">0</p>
+</div>
+<span>конвертор ваги з кг в фунти</span> <br>
+<input id="calc" type="number">
+<p id="resCalc"></p>
+
+<p>Таблица</p>
+<form name="tableCreate">
+    <input name="kol" type="number" placeholder="Kolonki">
+    <input name="stroki" type="number" placeholder="Stroki">
+    <input name="content" type="text" placeholder="Content">
+    <button>Submit</button>
+
+</form>
+<table id="tablica">
+
+</table>
+<div id="counter2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
